@@ -1,0 +1,99 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px
+}
+
+@media(min-width: 768px){
+    .news-input {
+        width: 50%;
+    }
+}
+
+.card {
+    padding: 40px; /* Custom padding */
+    margin: 5px;  /* Space between cards */
+}
+
+.btn-info {
+    padding: 12px 24px; /* Custom button padding */
+    margin-top: 10px;   /* Space above the button */
+}
+
+.footer {
+    position: fixed;
+    height: 35px;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel-img {
+    width: 450px;
+    height: 500px;
+    object-fit: cover; /* Ensure the image fills the box */
+  }
+  
+  .carousel-caption h5,
+  .carousel-caption p {
+    background-color: rgb(255, 255, 255); /* Highlight background */
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  /* Change the color of the next arrow */
+.carousel-control-next-icon {
+    background-color: #430e03; /* Set your desired vivid color */
+    border-radius: 10px; /* Optional: Make the arrow icon circular */
+  }
+
+  .carousel-control-prev-icon {
+    background-color: #430e03; /* Set your desired vivid color */
+    border-radius: 10px; /* Optional: Make the arrow icon circular */
+  }
+  #dog .col-md img {
+    width: 80%;
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensures the full image is visible without cropping */
+}
+
+/* Custom button styling */
+.btn-homepage {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff; /* Primary blue color */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: fixed; /* Position the button fixed at the bottom of the screen */
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right side */
+    z-index: 1000; /* Ensures the button stays above other elements */
+}
+
+.btn-homepage:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.btn-homepage:focus {
+    outline: none; /* Remove default outline on focus */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Focus shadow effect */
+}
+
+.btn-homepage:active {
+    background-color: #004085; /* Even darker blue when clicked */
+    transform: scale(1); /* Reset scale when clicked */
+}
+
+
+body {
+    padding-bottom: 100px; /* Matches footer height */
+}
+
+.footer {
+    z-index: 1000; /* Ensure footer stays on top */
